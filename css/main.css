@@ -40,6 +40,22 @@
     color: #00FD00;
 }
 
+.go-lang-color {
+    color: #05ACDB;
+}
+
+.javascript-color {
+    color: #e7ce04;
+}
+
+.python-color {
+    color: #316A99;
+}
+
+.bold {
+    font-weight: bold;
+}
+
 html {
     font-size: 10px;
 }
@@ -1991,15 +2007,15 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     max-width: 850px;
 }
 
-#about span {
-    color: #07617d;
+#about .title {
+    color: #00FD00;
 }
 
 #about h3 {
     font-family: "montserrat-bold", sans-serif;
     font-size: 1.8rem;
     line-height: 1.667;
-    color: #07617d;
+    color: #00FD00;
     text-transform: uppercase;
     letter-spacing: .3rem;
     position: relative;
@@ -2016,10 +2032,15 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 #about .lead {
     font-family: "librebaskerville-bold", serif;
-    font-size: 4rem;
+    font-size: 2rem;
     line-height: 1.8;
     color: #2e383f;
     margin-top: 6rem;
+}
+
+#about .lead-line {
+    background: #000;
+    color: #fff;
 }
 
 /* ------------------------------------------------------------------- 
