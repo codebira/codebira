@@ -2131,7 +2131,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * ------------------------------------------------------------------- */
 #services {
     background-color: #19191b;
-    background-image: url(../images/services-bg.jpg);
+    background-image: url(../images/services_bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
@@ -2169,7 +2169,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     color: rgba(242, 242, 242, 0.5);
 }
 
-#services .section-intro h1 {
+#services .section-intro h2 {
     color: #FFFFFF;
 }
 
@@ -2203,7 +2203,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 #services .services-list .icon i {
     font-size: 5.4rem;
-    color: #f9a828;
+    color: #00FD00;
 }
 
 #services .services-list .h05 {
