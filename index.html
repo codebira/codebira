@@ -30,6 +30,34 @@
         <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
         <link rel="manifest" href="favicons/site.webmanifest">
+        <!-- Start of Async Drift Code -->
+        <script async>
+            "use strict";
+
+            !function () {
+                var t = window.driftt = window.drift = window.driftt || [];
+                if (!t.init) {
+                    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+                    t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+                        t.factory = function (e) {
+                            return function () {
+                                var n = Array.prototype.slice.call(arguments);
+                                return n.unshift(e), t.push(n), t;
+                            };
+                        }, t.methods.forEach(function (e) {
+                            t[e] = t.factory(e);
+                        }), t.load = function (t) {
+                            var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+                            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                            var i = document.getElementsByTagName("script")[0];
+                            i.parentNode.insertBefore(o, i);
+                        };
+                }
+            }();
+            drift.SNIPPET_VERSION = '0.3.1';
+            drift.load('kceh8pf86xyn');
+        </script>
+        <!-- End of Async Drift Code -->
     </head>
 
     <body id="top">
@@ -44,13 +72,13 @@
             <nav id="menu-nav-wrap">
                 <a href="javascript:void(0);" class="close-button" title="close"><span>Close</span></a>
 
-                <h3>CodeBira</h3>
+                <h3><span class="green-color">Code</span>Bira</h3>
 
                 <ul class="nav-list">
                     <li class="current"><a class="smoothscroll" href="#home" title="">Home</a></li>
-                    <li><a class="smoothscroll" href="#about" title="">About</a></li>
+                    <li><a class="smoothscroll" href="#about" title="">About Us</a></li>
                     <li><a class="smoothscroll" href="#services" title="">What We Do </a></li>
-                    <li><a class="smoothscroll" href="#portfolio" title="">Portfolio</a></li>
+                    <li><a class="smoothscroll" href="#portfolio" title="">Our Work</a></li>
                     <li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
                 </ul>
                 <!-- <ul class="header-social-list">
@@ -79,7 +107,7 @@
                     <div class="row">
                         <div class="col-twelve">
 
-                            <h3 class="animate-intro">We Are CodeBira.</h3>
+                            <!-- <h3 class="animate-intro">We Are CodeBira.</h3> -->
                             <h1 class="animate-intro">
                                 We build <span class="green-color">your</span> software.
                             </h1>
@@ -221,27 +249,29 @@
             <div class="intro-wrap">
                 <div class="row narrow section-intro with-bottom-sep animate-this">
                     <div class="col-twelve">
-                        <h3>Showcase</h3>
-                        <h2>See Our Featured Projects.</h2>
+                        <h3>Our Work</h3>
+                        <!-- <h2>See Our Featured Projects.</h2>
                         <p class="lead">Lorem ipsum Dolor adipisicing nostrud et aute Excepteur amet commodo ea dolore
                             irure
                             esse Duis nulla sint fugiat cillum ullamco proident aliquip quis qui voluptate dolore veniam
                             Ut
-                            laborum non est in officia.</p>
+                            laborum non est in officia.</p> -->
                     </div>
                 </div> <!-- end row section-intro -->
             </div> <!-- end intro-wrap -->
             <div class="row portfolio-content-first">
                 <div id="folio-wrap" class="bricks-wrapper">
                     <div class="col-six">
-                        <img src="images/services_bg.jpg" alt="Skaterboy">
+                        <img src="images/screens/inventarium.png" alt="Inventerium">
                     </div>
                     <div class="col-six">
                         <div id="01" class=''>
-                            <h4>Shutterbug</h4>
-                            <p>Lorem ipsum Dolor deserunt labore sint officia. Magna et aute enim proident tempor
-                                sunt quis
-                                nulla voluptate fugiat velit. <a href="https://www.behance.net/">Details</a></p>
+                            <h4>Inventerium</h4>
+                            <p> Inventerium is an inventory management software to help manufacturing companies to
+                                manage Raw Materials, Sales, Products
+                                and Clients. You can see reports to analyse your company growth from time to time,
+                                generate invoices for your customers.</p>
+                            <p>Python, Django, Django Rest Framework, Vue.js, Material Design, Postgres</p>
                         </div>
                     </div>
                 </div>
@@ -250,28 +280,66 @@
                 <div id="folio-wrap" class="bricks-wrapper">
                     <div class="col-six">
                         <div id="01" class=''>
-                            <h4>Shutterbug</h4>
-                            <p>Lorem ipsum Dolor deserunt labore sint officia. Magna et aute enim proident tempor
-                                sunt quis
-                                nulla voluptate fugiat velit. <a href="https://www.behance.net/">Details</a></p>
+                            <h4>Autopeepal</h4>
+                            <p>Autopeepal is a remote diagnostics service helping customers diagnose any problem with
+                                their car and get help from field
+                                technicians instantly with details of the defective spare parts.
+                            </p>
+                            <p>Python, Django, Django Rest Framework, Bootstrap, Postgres</p>
                         </div>
                     </div>
                     <div class="col-six">
-                        <img src="images/services_bg.jpg" alt="Skaterboy">
+                        <img src="images/screens/autopeepal.png" alt="Autopeepal">
                     </div>
                 </div>
             </div>
             <div class="row portfolio-content">
                 <div id="folio-wrap" class="bricks-wrapper">
                     <div class="col-six">
-                        <img src="images/services_bg.jpg" alt="Skaterboy">
+                        <img src="images/screens/online_certification.jpg" alt="E-Learning Platform">
                     </div>
                     <div class="col-six">
                         <div id="01" class=''>
-                            <h4>Shutterbug</h4>
-                            <p>Lorem ipsum Dolor deserunt labore sint officia. Magna et aute enim proident tempor
-                                sunt quis
-                                nulla voluptate fugiat velit. <a href="https://www.behance.net/">Details</a></p>
+                            <h4>E-Learning Platform</h4>
+                            <p>Inventerium is an inventory management software to help manufacturing companies to manage
+                                Raw Materials, Sales, Products
+                                and Clients. You can see reports to analyse your company growth from time to time,
+                                generate invoices for your customers.</p>
+                            <p>Python, Django, Django Rest Framework, Vue.js, Vuetify, Postgres</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row portfolio-content">
+                <div id="folio-wrap" class="bricks-wrapper">
+                    <div class="col-six">
+                        <div id="01" class=''>
+                            <h4>Drone Based Application</h4>
+                            <p>Drone based web and desktop application to view and analyse aerial data with wide variety
+                                of application in agriculture,
+                                oil, insurance industries.
+                            </p>
+                            <p>Spring, Java, Maven, JavaFX, AWS, RoR</p>
+                        </div>
+                    </div>
+                    <div class="col-six">
+                        <img src="images/screens/drones.jpg" alt="Drone Based Application">
+                    </div>
+                </div>
+            </div>
+            <div class="row portfolio-content">
+                <div id="folio-wrap" class="bricks-wrapper">
+                    <!-- <div class="col-six">
+                        <img src="images/screens/online_certification.jpg" alt="Baby monitoring application">
+                    </div> -->
+                    <div class="col-twelve">
+                        <div id="01" class='text-center'>
+                            <h4>Baby monitoring application</h4>
+                            <p>Smart baby monitoring system that helps you monitor your baby while away at work on your
+                                device anywhere, anytime.
+                            </p>
+                            <p>GoLang, Postgres, Cassandra, Kafka, Docker, AWS
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -285,17 +353,18 @@
                 <div class="col-twelve">
 
                     <div class="client-lists owl-carousel">
-                        <div><img src="images/services_bg.jpg" alt=""></div>
-                        <div><img src="images/services_bg.jpg" alt=""></div>
-                        <div><img src="images/services_bg.jpg" alt=""></div>
-                        <div><img src="images/services_bg.jpg" alt=""></div>
-                        <div><img src="images/services_bg.jpg" alt=""></div>
-                        <div><img src="images/services_bg.jpg" alt=""></div>
-                        <div><img src="images/services_bg.jpg" alt=""></div>
-                        <div><img src="images/services_bg.jpg" alt=""></div>
-                        <div><img src="images/services_bg.jpg" alt=""></div>
-                        <div><img src="images/services_bg.jpg" alt=""></div>
-                        <div><img src="images/services_bg.jpg" alt=""></div>
+                        <div><img src="images/tech_logos/go.png" alt=""></div>
+                        <div><img src="images/tech_logos/python.png" alt=""></div>
+                        <div><img src="images/tech_logos/django.png" alt=""></div>
+                        <div><img src="images/tech_logos/javascript.png" alt="" style="width: 40%;"></div>
+                        <div><img src="images/tech_logos/vue.png" alt="" style="width: 40%;"></div>
+                        <div><img src="images/tech_logos/ruby.png" alt="" width="40%" style="width: 40%;"></div>
+                        <div><img src="images/tech_logos/rails.png" alt=""></div>
+                        <div><img src="images/tech_logos/java.png" alt="" style="width: 35%;"></div>
+                        <div><img src="images/tech_logos/html.png" alt="" style="width: 40%;"></div>
+                        <!-- <div><img src="images/tech_logos/CSS3.svg" alt=""></div> -->
+                        <div><img src="images/tech_logos/docker.png" alt=""></div>
+                        <div><img src="images/tech_logos/ansible.png" alt="" style="width: 40%;"></div>
                     </div>
                 </div> <!-- end col-twelve -->
             </div> <!-- end row -->
@@ -307,72 +376,17 @@
                     <h3>Contact</h3>
                     <h1>Get In Touch.</h1>
 
-                    <p class="lead">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur arcu erat,
+                    <!-- <p class="lead">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur arcu erat,
                         accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit.
-                        Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                        Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p> -->
                 </div>
             </div> <!-- end section-intro -->
             <div class="row contact-content">
 
-                <div class="col-seven tab-full animate-this">
+                <!-- end col-seven -->
 
-                    <h5>Send Us A Message</h5>
-
-                    <!-- form -->
-                    <form name="contactForm" id="contactForm" method="post">
-
-                        <div class="form-field">
-                            <input name="contactName" type="text" id="contactName" placeholder="Name" value=""
-                                minlength="2" required="">
-                        </div>
-
-                        <div class="row">
-                            <div class="col-six tab-full">
-                                <div class="form-field">
-                                    <input name="contactEmail" type="email" id="contactEmail" placeholder="Email"
-                                        value="" required="">
-                                </div>
-                            </div>
-                            <div class="col-six tab-full">
-                                <div class="form-field">
-                                    <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject"
-                                        value="">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-field">
-                            <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10"
-                                cols="50" required=""></textarea>
-                        </div>
-
-                        <div class="form-field">
-                            <button class="submitform">Submit</button>
-
-                            <div id="submit-loader">
-                                <div class="text-loader">Sending...</div>
-                                <div class="s-loader">
-                                    <div class="bounce1"></div>
-                                    <div class="bounce2"></div>
-                                    <div class="bounce3"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </form> <!-- end form -->
-
-                    <!-- contact-warning -->
-                    <div id="message-warning"></div>
-
-                    <!-- contact-success -->
-                    <div id="message-success">
-                        <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-                    </div>
-
-                </div> <!-- end col-seven -->
-
-                <div class="col-four tab-full contact-info end animate-this">
+                <div class="col-twelve tab-full contact-info end animate-this" style="text-align:center;">
 
                     <h5>Contact Information</h5>
 

@@ -60,6 +60,10 @@
     color: #ff0000;
 }
 
+.text-center {
+    text-align: center;
+}
+
 html {
     font-size: 10px;
 }
@@ -1567,13 +1571,13 @@ header .header-logo a {
 }
 
 #menu-nav-wrap .nav-list li a {
-    color: rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.75);
     display: block;
 }
 
 #menu-nav-wrap .nav-list li a:hover,
 #menu-nav-wrap .nav-list li a:focus {
-    color: white;
+    color: #00FD00;
 }
 
 #menu-nav-wrap .header-social-list {
@@ -2002,7 +2006,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #about {
     position: relative;
     padding: 4.2rem 0 12rem;
-    background-color: #FFFFFF;
+    background-color: #000;
     min-height: 696px;
     text-align: center;
 }
@@ -2019,7 +2023,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     font-family: "montserrat-bold", sans-serif;
     font-size: 1.8rem;
     line-height: 1.667;
-    color: #00FD00;
+    color: rgba(149, 149, 149, 0.7);
     text-transform: uppercase;
     letter-spacing: .3rem;
     position: relative;
@@ -2038,13 +2042,13 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     font-family: "librebaskerville-bold", serif;
     font-size: 2rem;
     line-height: 1.8;
-    color: #2e383f;
+    color: #fff;
     margin-top: 6rem;
 }
 
 #about .lead-line {
-    background: #000;
-    color: #fff;
+    background: #fff;
+    color: #000;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2298,6 +2302,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 #portfolio .portfolio-content-first {
     margin-top: -22.2rem;
+    color: #fff;
 }
 
 #portfolio .portfolio-content {
