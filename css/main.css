@@ -1429,6 +1429,12 @@ header .header-logo a {
     transition: all 0.5s ease-in-out;
 }
 
+@media only screen and (max-width: 600px) {
+    header .header-logo h1 {
+        font-size: 4rem;
+    }
+}
+
 /* ------------------------------------------------------------------- 
  * menu trigger - (_layout.css) 
  * ------------------------------------------------------------------- */
@@ -2341,6 +2347,26 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 #portfolio .bricks-wrapper .brick:nth-child(2n+1) {
     clear: both;
+}
+
+@media only screen and (max-width: 600px) {
+    #portfolio .portfolio-content-first .content h4 {
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #portfolio {
+        text-align: center;
+    }
+
+    #portfolio .portfolio-content-first h4 {
+        color: #000;
+    }
+
+    #portfolio .portfolio-content-first .content {
+        color: #000;
+    }
 }
 
 /* ------------------------------------------------------------------- 
